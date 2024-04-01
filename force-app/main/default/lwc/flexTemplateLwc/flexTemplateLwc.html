@@ -1,0 +1,26 @@
+<!-- myComponent.html -->
+<template>
+    <lightning-card title="Customer Pitch Maker">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Account" value={accName} onchange={handleAccountChange} type="text"></lightning-input>
+            <lightning-combobox name="rating"
+                        label="Rating"
+                        value={ratingValue}
+                        placeholder="Select Rating"
+                        options={ratingOptions}
+                        onchange={handleRatingChange}></lightning-combobox>
+            <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+            <br/>
+            <br/>
+
+            <lightning-formatted-rich-text value={response}></lightning-formatted-rich-text>
+            
+        </div>
+    </lightning-card>
+<template if:true={isLoading}>
+    <div>
+        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </div>
+</template>
+
+</template>

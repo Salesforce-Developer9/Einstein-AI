@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quantity_Used__c</fullName>
+    <externalId>false</externalId>
+    <label>Quantity Used</label>
+    <summarizedField>Soft_Drink_Order__c.Quantity__c</summarizedField>
+    <summaryForeignKey>Soft_Drink_Order__c.Soft_Drink__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

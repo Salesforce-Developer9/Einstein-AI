@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <description>This Flow is Used to Update the Status of Soft Drink record to Expired, for Example if ,a User Says Mark the Status of Soft Drink Record ABC as Expired</description>
+    <environments>Default</environments>
+    <interviewLabel>Update Soft Drink Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Soft Drink Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Soft_Drink_Orders_Record</name>
+        <label>Update Soft Drink Orders Record</label>
+        <locationX>474</locationX>
+        <locationY>517</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Soft_Drink__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SoftDrinkID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Cancelled</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Soft_Drink_Order__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Soft_Drink_Status</name>
+        <label>Update Soft Drink Status</label>
+        <locationX>608</locationX>
+        <locationY>296</locationY>
+        <connector>
+            <targetReference>Update_Soft_Drink_Orders_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SoftDrinkID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Expired</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Soft_Drink__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>543</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Update_Soft_Drink_Status</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Soft Drink Record for which Status needs to be updated as Expired</description>
+        <name>SoftDrinkID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>
