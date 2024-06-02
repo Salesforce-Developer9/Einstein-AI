@@ -57,5 +57,21 @@
 		<members>Soft_Drink__c</members>
 		<name>CustomObject</name>
 	</types>
-	<version>58.0</version>
+	<types>
+		<members>Soft_Drink__c</members>
+		<members>Soft_Drink_Order__c</members>
+      <name>CustomTab</name>
+	</types>
+	<types>
+		<members>Soft_Drink_Order_Record_Page</members>
+		<members>Soft_Drink_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Soft_Drink_Order__c-Soft Drink Order Layout</members>
+		<members>Soft_Drink__c-Soft Drink Layout</members>
+		<name>Layout</name>
+	</types>
+	<version>60.0</version>
+	<version>60.0</version>
 </Package>
