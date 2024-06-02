@@ -13,10 +13,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>Hola</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>SoftDrinkOrderController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -128,6 +124,14 @@
         <endAddress>255.255.255.255</endAddress>
         <startAddress>0.0.0.0</startAddress>
     </loginIpRanges>
+    <tabVisibilities>
+        <tab>Soft_Drink_Order__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Soft_Drink__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
