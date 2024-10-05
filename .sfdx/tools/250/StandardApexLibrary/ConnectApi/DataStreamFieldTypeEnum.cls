@@ -1,0 +1,11 @@
+global enum DataStreamFieldTypeEnum {
+BOOLEAN,
+DATE,
+DATETIME,
+EMAIL,
+NUMBER,
+PERCENT,
+PHONE,
+TEXT,
+URL
+}

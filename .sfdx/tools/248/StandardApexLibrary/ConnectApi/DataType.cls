@@ -1,8 +1,0 @@
-global enum DataType {
-BOOLEAN,
-DATE,
-DATEONLY,
-DATETIME,
-NUMBER,
-TEXT
-}

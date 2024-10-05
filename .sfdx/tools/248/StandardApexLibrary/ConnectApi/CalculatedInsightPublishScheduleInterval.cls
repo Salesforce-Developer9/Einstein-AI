@@ -1,9 +1,0 @@
-global enum CalculatedInsightPublishScheduleInterval {
-EXTERNALLYMANAGED,
-NOTSCHEDULED,
-SIX,
-STREAMING,
-SYSTEMMANAGED,
-TWELVE,
-TWENTYFOUR
-}

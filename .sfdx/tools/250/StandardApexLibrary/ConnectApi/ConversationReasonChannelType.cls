@@ -1,0 +1,7 @@
+global enum ConversationReasonChannelType {
+EMAIL,
+EMBEDDEDMESSAGING,
+LIVECHATAGENT,
+LIVECHATBOT,
+WEBTOCASE
+}

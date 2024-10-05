@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	
 	<types>
 		<members>Account.Account_Summary__c</members>
 		<members>Account.Active__c</members>
@@ -58,9 +59,9 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>Soft_Drink__c</members>
 		<members>Soft_Drink_Order__c</members>
-      <name>CustomTab</name>
+		<members>Soft_Drink__c</members>
+		<name>CustomTab</name>
 	</types>
 	<types>
 		<members>Soft_Drink_Order_Record_Page</members>
@@ -72,6 +73,5 @@
 		<members>Soft_Drink__c-Soft Drink Layout</members>
 		<name>Layout</name>
 	</types>
-	<version>60.0</version>
 	<version>60.0</version>
 </Package>

@@ -1,0 +1,11 @@
+global enum CdpScheduleFrequencyTypeEnum {
+BATCH,
+DAILY,
+HOURLY,
+MINUTELY,
+MONTHLY,
+MONTHLYRELATIVE,
+NONE,
+STREAMING,
+WEEKLY
+}

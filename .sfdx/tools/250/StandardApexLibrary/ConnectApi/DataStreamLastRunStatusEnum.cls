@@ -1,0 +1,8 @@
+global enum DataStreamLastRunStatusEnum {
+CANCELLED,
+FAILURE,
+INPROGRESS,
+NONE,
+PENDING,
+SUCCESS
+}
