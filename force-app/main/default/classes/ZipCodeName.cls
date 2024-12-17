@@ -8,7 +8,7 @@ public class ZipCodeName {
         
         Http h = new Http();
         HttpRequest req = new HttpRequest();
-        req.setEndpoint('https://api.zipcodestack.com/v1/search?codes=' + zipCodeToFind );
+        req.setEndpoint('https://api.zipcodestack.com/v1/search?codes=' + zipCodeToFind +'&country=us' );
         req.setMethod('GET');
         req.setHeader('apikey', 'YOUR_API_KEY');
         
