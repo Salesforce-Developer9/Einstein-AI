@@ -45,6 +45,11 @@
         <field>Soft_Drink_Order__c.Price__c</field>
         <readable>true</readable>
     </fieldPermissions>
+     <fieldPermissions>
+        <editable>true</editable>
+        <field>Soft_Drink_Order__c.Order_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Soft_Drink_Order__c.Quantity__c</field>
