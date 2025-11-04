@@ -125,10 +125,7 @@
         <field>Soft_Drink__c.brewery_id__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <loginIpRanges>
-        <endAddress>255.255.255.255</endAddress>
-        <startAddress>0.0.0.0</startAddress>
-    </loginIpRanges>
+  
     <tabVisibilities>
         <tab>Soft_Drink_Order__c</tab>
         <visibility>DefaultOn</visibility>
